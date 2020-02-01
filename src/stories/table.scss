@@ -1,0 +1,36 @@
+$border-color: #d9d9d9;
+$disabled-color: #efefef;
+$selected-color: #fff6de;
+$being-selected-color: #defbff;
+
+.table-drag-select {
+  width: 100%;
+  word-break: break-word;
+  border: 1px solid $border-color;
+  font-size: 10px;
+}
+
+.table-drag-select td {
+  min-width: 30px;
+  min-height: 30px;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.table-drag-select td.cell-enabled {
+  background: white;
+  cursor: cell;
+}
+
+.table-drag-select td.cell-disabled {
+  text-align: center;
+  background: $disabled-color;
+}
+
+.table-drag-select td.cell-selected {
+  background-color: $selected-color;
+}
+
+.table-drag-select td.cell-being-selected {
+  background-color: $being-selected-color;
+}
