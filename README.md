@@ -4,7 +4,7 @@
 ![](./pic/demo.jpg)
 
 ### Installation
-- npm instal git@github.com:laclys/drag-select-rc.git --save
+- `npm instal git@github.com:laclys/drag-select-rc.git --save`
 
 ### Usage
 
