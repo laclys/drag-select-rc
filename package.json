@@ -1,8 +1,10 @@
 {
   "name": "drag-select-rc-comp",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "lib/es5/index",
+  "module": "lib/es/index",
   "dependencies": {
+    "@babel/preset-typescript": "^7.8.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,18 +13,32 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "clone": "^2.1.2",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
+    "rimraf": "^3.0.1",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.25.3",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "rimraf lib/* && rollup -c",
+    "clean:dist": "rimraf lib/*",
+    "watch": "rollup -cw",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -46,6 +62,7 @@
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.9"
+    "@storybook/react": "^5.3.9",
+    "lerna": "^3.20.2"
   }
 }
