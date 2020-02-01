@@ -1,5 +1,5 @@
 {
-  "name": "drag-select-rc-comp",
+  "name": "drag-select-rc",
   "version": "1.0.0",
   "main": "lib/es5/index",
   "module": "lib/es/index",
