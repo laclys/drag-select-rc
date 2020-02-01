@@ -2,6 +2,7 @@
 - A drag-select react component
 
 ### Installation
+- npm instal git@github.com:laclys/drag-select-rc.git --save
 
 ### Usage
 
