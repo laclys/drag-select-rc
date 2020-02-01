@@ -1,6 +1,8 @@
 # drag-select-rc
 - A drag-select react component
 
+![](./pic/demo.jpg)
+
 ### Installation
 - npm instal git@github.com:laclys/drag-select-rc.git --save
 
