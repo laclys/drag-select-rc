@@ -1,6 +1,6 @@
 # drag-select-rc
 - A drag-select react component
-
+[Storybook Demo](https://laclys.github.io/drag-select-rc/storybook-static/)
 ![](./pic/demo.jpg)
 
 ### Installation
