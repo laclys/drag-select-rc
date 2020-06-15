@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 // eventToCellLocation(event)
 // {row: 2, column: 3} ^-^
-export const eventToCellLocation = (e: any) => {
+export const eventToCellLocation = (e: TouchEvent) => {
   let target
   if (e.touches) {
     const touch = e.touches[0]
