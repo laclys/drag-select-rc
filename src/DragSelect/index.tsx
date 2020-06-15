@@ -1,5 +1,6 @@
 import React, { useState, MouseEvent, useRef, FC } from 'react'
 import clone from 'clone'
+
 import { eventToCellLocation, useEventListener } from './helpers'
 
 interface DragSelectProps {
@@ -36,12 +37,12 @@ const DragSelect: FC<DragSelectProps> = props => {
     }
   }
 
-  const handleTouchStartCell = (e: MouseEvent<HTMLElement>) => {
-    const isLeftClick = e.button === 0
+  const handleTouchStartCell = (e: MouseEvent | TouchEvent) => {
+    const isLeftClick = (e as MouseEvent).button === 0
     const isTouch = e.type !== 'mousedown'
     if (!selectionStarted && (isLeftClick || isTouch)) {
       e.preventDefault()
-      const { row, column } = eventToCellLocation(e)
+      const { row, column } = eventToCellLocation(e as TouchEvent)
       setSelectionStarted(true)
       setStartRow(row)
       setStartColumn(column)
@@ -51,7 +52,7 @@ const DragSelect: FC<DragSelectProps> = props => {
     }
   }
 
-  const handleTouchMoveCell = (e: any) => {
+  const handleTouchMoveCell = (e: TouchEvent) => {
     if (selectionStarted) {
       e.preventDefault()
       const { row, column } = eventToCellLocation(e)
