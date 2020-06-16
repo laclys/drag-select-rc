@@ -1,6 +1,6 @@
 {
   "name": "drag-select-rc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/es5/index",
   "module": "lib/es/index",
   "dependencies": {
