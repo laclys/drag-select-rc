@@ -1,4 +1,11 @@
 # drag-select-rc
+
+  [![](https://img.shields.io/github/license/laclys/drag-select-rc)](https://github.com/laclys/drag-select-rc)
+  [![](https://img.shields.io/bundlephobia/min/drag-select-rc)](https://www.npmjs.com/package/drag-select-rc)
+  [![](https://img.shields.io/npm/dm/drag-select-rc)](https://www.npmjs.com/package/drag-select-rc)
+
+
+
 - A drag-select react component
 [Storybook Demo](https://laclys.github.io/drag-select-rc/storybook-static/)
 ![](./pic/demo.jpg)
@@ -115,5 +122,8 @@ $being-selected-color: #defbff;
 
 ### Features
 - Test
+
+### License
+- MIT
 
 Have fun 👿
