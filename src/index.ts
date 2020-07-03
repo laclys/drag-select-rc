@@ -1,3 +1,3 @@
-import DragSelect from './DragSelect'
+import DragSelect from "./DragSelect";
 
-export default DragSelect
+export default DragSelect;

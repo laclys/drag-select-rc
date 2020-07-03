@@ -1,6 +1,6 @@
 {
   "name": "drag-select-rc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/es5/index",
   "module": "lib/es/index",
   "dependencies": {
@@ -19,8 +19,8 @@
     "build": "rimraf lib/* && rollup -c",
     "clean:dist": "rimraf lib/*",
     "watch": "rollup -cw",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,11 +39,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@storybook/addon-actions": "^5.3.9",
-    "@storybook/addon-links": "^5.3.9",
-    "@storybook/addons": "^5.3.9",
-    "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.9",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.2",
+    "@storybook/react": "^5.3.19",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
@@ -53,6 +53,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "lerna": "^3.20.2",
+    "react-scripts": "^3.4.1",
     "rimraf": "^3.0.1",
     "rollup": "^1.31.0",
     "rollup-plugin-babel": "^4.3.3",
