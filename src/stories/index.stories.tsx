@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { action } from "@storybook/addon-actions";
 import DragSelect from "../DragSelect";
-import "./table.scss";
+import './table.scss'
 
 const WEEK_S = ["一", "二", "三", "四", "五", "六", "日"];
 
@@ -13,7 +13,7 @@ export default {
 export const index = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [cells, setCells] = useState(initCellsFunc());
-  const changeDrag = (val) => {
+  const changeDrag = (val: React.SetStateAction<any[]>) => {
     action('draged!')
     setCells(val)
   };
