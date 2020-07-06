@@ -119,10 +119,6 @@ $being-selected-color: #defbff;
 - `npm run build-storybook` build storybook-static
 - `npm run build`
 
-
-### Features
-- Test
-
 ### License
 - MIT
 
