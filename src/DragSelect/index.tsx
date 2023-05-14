@@ -4,6 +4,7 @@ import clone from 'clone'
 import { eventToCellLocation, useEventListener } from './helpers'
 
 interface DragSelectProps {
+  children(children: any, arg1: (tr: any, i: number) => React.JSX.Element): unknown
   value: boolean[][]
   onChange: (val: boolean[][]) => void
 }
