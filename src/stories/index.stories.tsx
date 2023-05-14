@@ -15,6 +15,7 @@ export const index = () => {
   const [cells, setCells] = useState(initCellsFunc());
   const changeDrag = (val: React.SetStateAction<any[]>) => {
     action('draged!')
+    console.log('val', val)
     setCells(val)
   };
 
