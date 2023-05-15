@@ -6,7 +6,7 @@
 
 
 
-- A drag-select react component
+- A drag-select react component(v1.1.0)
 [Storybook Demo](https://laclys.github.io/drag-select-rc/storybook-static/)
 ![](./pic/demo.jpg)
 
@@ -115,7 +115,7 @@ $being-selected-color: #defbff;
 
 
 ### Dev
-- `npm run storybook` run storybook server on http://localhost:9009/
+- `npm run storybook` run storybook server on http://localhost:6006/
 - `npm run build-storybook` build storybook-static
 - `npm run build`
 
@@ -123,3 +123,14 @@ $being-selected-color: #defbff;
 - MIT
 
 Have fun 👿
+
+
+----
+
+### Changelog
+1.1.0 (2023.05.15)
+
+- Update `demo page` storybook version(5 -> 7 (Built via @storybook/react-vite)) && refactor `.storybook files` && rebuild `storybook-static`
+- Update core npm package(react -> 18..)
+- rebuild npm version 1.1.0
+
